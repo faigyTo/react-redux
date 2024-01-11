@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import ListItem from "./ListItem";
-import { showForm } from "../store/actions/bookActions";
+import { showForm } from "./book";
 
 const List = () => {
-    let bookArr=useSelector((st)=> st.bookArr);
-    let bookAdd=useSelector((st)=>st.bookAdd);
+    let bookArr=useSelector((st)=> st.libraryBook.bookArr);
+    let bookAdd=useSelector((st)=>st.libraryBook.bookAdd);
     let dispatch=useDispatch();
 
     //let [add,setAdd]=useState(bookAdd);

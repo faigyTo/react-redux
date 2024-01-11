@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 
 const  BookDetails= () => {
-let bookArr=useSelector(state=>state.bookArr); 
-let selectedBook= useSelector(state=>state.selectedBook); 
+let bookArr=useSelector(state=>state.libraryBook.bookArr); 
+let selectedBook= useSelector(state=>state.libraryBook.selectedBook); 
     return ( <div>
         :פרטי הספר
     <p>שם הספר  {selectedBook.bookName} </p>    

@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addBook } from "../store/actions/bookActions";
+import { addBook } from "./book";
 import { useState } from "react";
 const AddBook = () => {
 
 
 let details={};
-let bookAdd=useSelector(state=>state.bookAdd);
+let bookAdd=useSelector(state=>state.libraryBook.bookAdd);
 let dispatch=useDispatch();
 const change=(e)=>{
     let inputName=e.target.name;

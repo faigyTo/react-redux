@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { deleteBook,selectedBookForEdit,selectedBookForShow } from "../store/actions/bookActions";
+import { deleteBook,selectedBookForEdit,selectedBookForShow } from "./book";
 
 const ListItem = ({one}) => {
     let dispatch=useDispatch();
